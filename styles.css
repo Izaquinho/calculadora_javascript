@@ -1,0 +1,37 @@
+.calculator {
+    width: 250px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.calculator td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.calculator input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    border: none;
+    outline: none;
+}
+
+.calculator input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.calculator input[type="button"]:hover {
+    background-color: #ddd;
+}
+
+.calculator input[type="button"]:active {
+    background-color: #ccc;
+}

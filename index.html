@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table class="calculator">
+        <tr>
+            <td colspan="4">
+                <textarea id="history" rows="4" disabled></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="text" id="display" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="C" onclick="clearDisplay()">
+            </td>
+            <td>
+                <input type="button" value="+/-" onclick="toggleSign()">
+            </td>
+            <td>
+                <input type="button" value="%" onclick="addToDisplay('%')">
+            </td>
+            <td>
+                <input type="button" value="/" onclick="addToDisplay('/')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="7" onclick="addToDisplay('7')">
+            </td>
+            <td>
+                <input type="button" value="8" onclick="addToDisplay('8')">
+            </td>
+            <td>
+                <input type="button" value="9" onclick="addToDisplay('9')">
+            </td>
+            <td>
+                <input type="button" value="X" onclick="addToDisplay('*')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" onclick="addToDisplay('4')">
+            </td>
+            <td>
+                <input type="button" value="5" onclick="addToDisplay('5')">
+            </td>
+            <td>
+                <input type="button" value="6" onclick="addToDisplay('6')">
+            </td>
+            <td>
+                <input type="button" value="-" onclick="addToDisplay('-')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" onclick="addToDisplay('1')">
+            </td>
+            <td>
+                <input type="button" value="2" onclick="addToDisplay('2')">
+            </td>
+            <td>
+                <input type="button" value="3" onclick="addToDisplay('3')">
+            </td>
+            <td>
+                <input type="button" value="+" onclick="addToDisplay('+')">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="0" onclick="addToDisplay('0')">
+            </td>
+            <td>
+                <input type="button" value="." onclick="addToDisplay('.')">
+            </td>
+            <td>
+                <input type="button" value="=" onclick="calculate()">
+            </td>
+        </tr>
+    </table>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
